@@ -44,16 +44,16 @@
       display: flex;
       align-items: stretch;
       margin: 40px auto;
-      max-width: 900px;
-      border-radius: 12px;
+      max-width: 1100px;
+      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      background-color: #eaf4ff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background-color: #e6f1ff;
       transition: background-color 0.3s ease;
     }
 
     .section:hover {
-      background-color: #f0f8ff;
+      background-color: #d9ecff;
     }
 
     .text-block {
@@ -63,17 +63,18 @@
 
     .image-block {
       flex: 1;
-      background-color: #d3eaff;
+      background-color: #d0e8ff;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 20px;
     }
 
     .image-block img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      max-width: 80px;
+      max-height: 80px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
@@ -101,12 +102,35 @@
       display: inline-block;
       min-width: 100px;
     }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    #backToTop:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
 
+<!-- Back to Top Button -->
+<a id="backToTop" href="#top">↑</a>
+
 <!-- Menu -->
-<header>
+<header id="top">
   <a href="#contact">Contact</a>
   <a href="#click-chemistry">Click Chemistry</a>
   <a href="#vaccine-design">Vaccine Design</a>
@@ -128,68 +152,68 @@
     <p><strong>GitHub:</strong> github.com/yourprofile</p>
   </div>
   <div class="image-block">
-    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Milad Bagheri">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Milad Bagheri">
   </div>
 </div>
 
-<!-- Section Template -->
+<!-- Sections -->
 <div class="section" id="click-chemistry">
   <div class="text-block">
     <h2>Click Chemistry</h2>
-    <p>Click chemistry is a powerful approach in chemistry that enables rapid, high-yield, and selective reactions. It has applications in drug design, biomaterials, and the development of new chemical reactions.</p>
+    <p>Click chemistry enables high-yield, selective reactions ideal for biomedical applications, such as drug development and materials science.</p>
   </div>
   <div class="image-block">
-    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Click Chemistry">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Click Chemistry">
   </div>
 </div>
 
 <div class="section" id="vaccine-design">
   <div class="text-block">
     <h2>Vaccine Design</h2>
-    <p>Vaccine design involves identifying and developing compounds that prepare the immune system. Computational tools are used to enhance vaccine development and effectiveness.</p>
+    <p>Vaccine design uses computational biology and bioinformatics to predict antigens and optimize immune responses with minimal side effects.</p>
   </div>
   <div class="image-block">
-    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Vaccine Design">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Vaccine Design">
   </div>
 </div>
 
 <div class="section" id="peptide-design">
   <div class="text-block">
     <h2>Peptide Design</h2>
-    <p>Peptide design creates short chains of amino acids with therapeutic or research value. These peptides can act as hormones, enzymes, or drugs in the body.</p>
+    <p>Design of synthetic peptides for therapeutic applications, utilizing modeling tools to predict stable and functional peptide structures.</p>
   </div>
   <div class="image-block">
-    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Peptide Design">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Peptide Design">
   </div>
 </div>
 
 <div class="section" id="antibody-design">
   <div class="text-block">
     <h2>Antibody Design</h2>
-    <p>Antibody design is crucial for therapeutic development, involving molecular modeling and structural predictions to improve specificity and efficacy.</p>
+    <p>Antibody engineering targets specific proteins for treatment or detection. In silico tools improve affinity, selectivity, and stability.</p>
   </div>
   <div class="image-block">
-    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Antibody Design">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Antibody Design">
   </div>
 </div>
 
 <div class="section" id="molecular-dynamics">
   <div class="text-block">
     <h2>Molecular Dynamics</h2>
-    <p>Molecular dynamics simulations allow us to understand atomic-level motions and interactions. It's widely used in drug discovery and structural biology.</p>
+    <p>Molecular dynamics simulates atomic interactions in biomolecules, providing insight into conformational changes and binding mechanisms.</p>
   </div>
   <div class="image-block">
-    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Molecular Dynamics">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Molecular Dynamics">
   </div>
 </div>
 
 <div class="section" id="genetics">
   <div class="text-block">
     <h2>Genetics</h2>
-    <p>Genetics involves studying genes, variations, and heredity. It plays a vital role in personalized medicine and diagnosing inherited disorders.</p>
+    <p>Genetics focuses on DNA sequence analysis, gene expression, and mutation tracking to understand and treat genetic disorders more effectively.</p>
   </div>
   <div class="image-block">
-    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Genetics">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Genetics">
   </div>
 </div>
 
