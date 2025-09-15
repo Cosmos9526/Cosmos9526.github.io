@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Milad Bagheri - Research Portfolio</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background: #f9f9f9;
-    color: #222;
-    scroll-behavior: smooth;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milad Bagheri - Profile</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  header {
-    background-color: #222;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.8rem;
-  }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+      scroll-behavior: smooth;
+    }
 
-  nav {
-    background-color: #007bff;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-  }
+    header {
+      background-color: #007bff;
+      padding: 10px 40px;
+      display: flex;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-  nav a {
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-  }
-  nav a:hover {
-    background-color: #0056b3;
-  }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
 
-  section {
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 20px 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
-  }
+    header a:hover {
+      background-color: #0056b3;
+    }
 
-  section h2 {
-    margin-top: 0;
-    color: #0d47a1;
-  }
+    .section {
+      display: flex;
+      align-items: stretch;
+      margin: 40px auto;
+      max-width: 900px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #eaf4ff;
+      transition: background-color 0.3s ease;
+    }
 
-  .subsection {
-    display: flex;
-    gap: 20px;
-    margin-top: 25px;
-    align-items: center;
-  }
+    .section:hover {
+      background-color: #f0f8ff;
+    }
 
-  .subsection .text {
-    flex: 1;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
+    .text-block {
+      padding: 30px 25px;
+      flex: 3;
+    }
 
-  .subsection .image {
-    flex: 1;
-    max-width: 300px;
-  }
+    .image-block {
+      flex: 1;
+      background-color: #d3eaff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .subsection .image img {
-    width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
-  }
-</style>
+    .image-block img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #004b9a;
+    }
+
+    .text-block p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    /* Contact section style */
+    #contact .text-block {
+      padding-top: 20px;
+    }
+
+    #contact h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #004b9a;
+    }
+
+    #contact p strong {
+      display: inline-block;
+      min-width: 100px;
+    }
+  </style>
 </head>
 <body>
 
-<header>Milad Bagheri</header>
-
-<nav>
+<!-- Menu -->
+<header>
   <a href="#contact">Contact</a>
   <a href="#click-chemistry">Click Chemistry</a>
   <a href="#vaccine-design">Vaccine Design</a>
@@ -94,152 +114,84 @@
   <a href="#antibody-design">Antibody Design</a>
   <a href="#molecular-dynamics">Molecular Dynamics</a>
   <a href="#genetics">Genetics</a>
-</nav>
+</header>
 
 <!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p><strong>Email:</strong> <a href="mailto:milad9dxb@gmail.com">milad9dxb@gmail.com</a></p>
-  <p><strong>Location:</strong> Dubai Downtown</p>
-  <p><strong>Phone:</strong> <a href="tel:+9715215270431">+971 52 152 70431</a></p>
-  <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=ArhW6SEAAAAJ&hl=en" target="_blank" rel="noopener">Milad Bagheri</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourprofile</a></p>
-  
-  <div class="subsection">
-    <div class="text">
-      <p>I am a researcher with extensive experience in computational chemistry and molecular modeling. Passionate about innovative research and collaboration to advance scientific knowledge.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Milad Bagheri" />
-    </div>
+<div class="section" id="contact">
+  <div class="text-block">
+    <h1>Milad Bagheri</h1>
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> milad9dxb@gmail.com</p>
+    <p><strong>Location:</strong> Dubai Downtown</p>
+    <p><strong>Phone:</strong> +971 52 152 70431</p>
+    <p><strong>Google Scholar:</strong> Milad Bagheri</p>
+    <p><strong>GitHub:</strong> github.com/yourprofile</p>
   </div>
-</section>
+  <div class="image-block">
+    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Milad Bagheri">
+  </div>
+</div>
 
-<!-- Click Chemistry Section -->
-<section id="click-chemistry">
-  <h2>Click Chemistry</h2>
-  <div class="subsection">
-    <div class="text">
-      <p>Click chemistry is a powerful approach in chemistry that enables rapid, high-yield, and selective reactions. It has applications in drug design, biomaterials, and the development of new chemical reactions.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Click Chemistry" />
-    </div>
+<!-- Section Template -->
+<div class="section" id="click-chemistry">
+  <div class="text-block">
+    <h2>Click Chemistry</h2>
+    <p>Click chemistry is a powerful approach in chemistry that enables rapid, high-yield, and selective reactions. It has applications in drug design, biomaterials, and the development of new chemical reactions.</p>
   </div>
-  <div class="subsection">
-    <div class="text">
-      <p>The concept of click chemistry was introduced by K. Barry Sharpless and has revolutionized the way chemists approach synthesis. The reactions are bioorthogonal, meaning they do not interfere with biological processes, making them ideal for bioconjugation and drug development.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Click Chemistry" />
-    </div>
+  <div class="image-block">
+    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Click Chemistry">
   </div>
-</section>
+</div>
 
-<!-- Vaccine Design Section -->
-<section id="vaccine-design">
-  <h2>Vaccine Design</h2>
-  <div class="subsection">
-    <div class="text">
-      <p>Vaccine design involves identifying and developing biological compounds that prepare the immune system to fight diseases. Computational methods help accelerate this process.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Vaccine Design" />
-    </div>
+<div class="section" id="vaccine-design">
+  <div class="text-block">
+    <h2>Vaccine Design</h2>
+    <p>Vaccine design involves identifying and developing compounds that prepare the immune system. Computational tools are used to enhance vaccine development and effectiveness.</p>
   </div>
-  <div class="subsection">
-    <div class="text">
-      <p>Modern vaccine design uses structural biology, immunoinformatics, and molecular docking to predict and optimize epitopes that trigger immune responses. This accelerates vaccine development and improves efficacy.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Vaccine Design" />
-    </div>
+  <div class="image-block">
+    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Vaccine Design">
   </div>
-</section>
+</div>
 
-<!-- Peptide Design Section -->
-<section id="peptide-design">
-  <h2>Peptide Design</h2>
-  <div class="subsection">
-    <div class="text">
-      <p>Peptide design refers to creating small protein molecules with specific features that can be used in disease treatment and biological research.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Peptide Design" />
-    </div>
+<div class="section" id="peptide-design">
+  <div class="text-block">
+    <h2>Peptide Design</h2>
+    <p>Peptide design creates short chains of amino acids with therapeutic or research value. These peptides can act as hormones, enzymes, or drugs in the body.</p>
   </div>
-  <div class="subsection">
-    <div class="text">
-      <p>Computational tools allow scientists to design peptides with high specificity and stability, which is critical for drug delivery and therapeutic applications.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Peptide Design" />
-    </div>
+  <div class="image-block">
+    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Peptide Design">
   </div>
-</section>
+</div>
 
-<!-- Antibody Design Section -->
-<section id="antibody-design">
-  <h2>Antibody Design</h2>
-  <div class="subsection">
-    <div class="text">
-      <p>Antibody design is the process of creating specific antibodies to target disease-causing molecules. This field has broad applications in biologic therapies.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Antibody Design" />
-    </div>
+<div class="section" id="antibody-design">
+  <div class="text-block">
+    <h2>Antibody Design</h2>
+    <p>Antibody design is crucial for therapeutic development, involving molecular modeling and structural predictions to improve specificity and efficacy.</p>
   </div>
-  <div class="subsection">
-    <div class="text">
-      <p>Advancements in antibody engineering include designing bispecific antibodies and antibody-drug conjugates to improve targeting and reduce side effects.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Antibody Design" />
-    </div>
+  <div class="image-block">
+    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Antibody Design">
   </div>
-</section>
+</div>
 
-<!-- Molecular Dynamics Section -->
-<section id="molecular-dynamics">
-  <h2>Molecular Dynamics</h2>
-  <div class="subsection">
-    <div class="text">
-      <p>Molecular dynamics is a computational method used to study the behavior of molecules and their interactions at the atomic level, important in drug research.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Molecular Dynamics" />
-    </div>
+<div class="section" id="molecular-dynamics">
+  <div class="text-block">
+    <h2>Molecular Dynamics</h2>
+    <p>Molecular dynamics simulations allow us to understand atomic-level motions and interactions. It's widely used in drug discovery and structural biology.</p>
   </div>
-  <div class="subsection">
-    <div class="text">
-      <p>Simulations allow scientists to predict molecular conformations and interactions, facilitating drug design and understanding biochemical processes.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Molecular Dynamics" />
-    </div>
+  <div class="image-block">
+    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Molecular Dynamics">
   </div>
-</section>
+</div>
 
-<!-- Genetics Section -->
-<section id="genetics">
-  <h2>Genetics</h2>
-  <div class="subsection">
-    <div class="text">
-      <p>Genetic studies analyze the structure and function of genes, playing a key role in developing targeted treatments and disease diagnosis.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Genetics" />
-    </div>
+<div class="section" id="genetics">
+  <div class="text-block">
+    <h2>Genetics</h2>
+    <p>Genetics involves studying genes, variations, and heredity. It plays a vital role in personalized medicine and diagnosing inherited disorders.</p>
   </div>
-  <div class="subsection">
-    <div class="text">
-      <p>Advances in genomics and gene editing technologies are revolutionizing medicine and offering new hope for curing genetic diseases.</p>
-    </div>
-    <div class="image">
-      <img src="5e808b93-48e5-4ada-9063-32a7cab957de.png" alt="Genetics" />
-    </div>
+  <div class="image-block">
+    <img src="bf3e1c31-d50a-4c3e-9695-35608c3c09e2.png" alt="Genetics">
   </div>
-</section>
+</div>
 
 </body>
 </html>
