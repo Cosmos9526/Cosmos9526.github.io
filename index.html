@@ -1,76 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milad Bagheri - Research Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #6B46C1; /* بنفش تیره برای پس‌زمینه، می‌تونید با تصویر جایگزین کنید */
-            background-size: 70% auto; /* اندازه کوچک‌تر و فیت‌شده */
-            background-position: center;
-            background-attachment: fixed;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        nav {
-            background-color: rgba(255, 255, 255, 0.9); /* سفید نیمه‌شفاف برای تب‌ها */
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: #6B46C1; /* بنفش برای متن تب‌ها */
-            text-decoration: none;
-            font-size: 1.2em;
-            padding: 5px 15px;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            background-color: rgba(107, 70, 193, 0.2); /* بنفش کم‌رنگ در هورور */
-            border-radius: 5px;
-        }
-        header {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        h1 {
-            font-size: 4em;
-            margin: 0;
-            color: #000000; /* مشکی برای نام */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milad Bagheri - Profile</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #6B46C1; /* بنفش تیره برای پس‌زمینه */
+      background-size: 70% auto; /* اندازه کوچیک‌تر و فیت‌شده */
+      background-position: center;
+      background-attachment: fixed;
+      color: #000000; /* مشکی برای متن‌ها */
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.9); /* سفید نیمه‌شفاف برای تب‌ها */
+      padding: 10px 40px;
+      display: flex;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* سایه برای جدایی */
+    }
+
+    header a {
+      color: #6B46C1; /* بنفش برای متن تب‌ها */
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    header a:hover {
+      background-color: rgba(107, 70, 193, 0.2); /* بنفش کم‌رنگ در هورور */
+    }
+
+    .section {
+      display: flex;
+      align-items: stretch;
+      margin: 40px auto;
+      max-width: 1300px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.9); /* سفید نیمه‌شفاف برای بخش‌ها */
+      transition: background-color 0.3s ease;
+    }
+
+    .section:hover {
+      background-color: rgba(255, 255, 255, 0.7); /* سفید کم‌رنگ‌تر در هورور */
+    }
+
+    .text-block {
+      padding: 40px 30px;
+      flex: 3;
+    }
+
+    .image-block {
+      flex: 1.2;
+      background-color: rgba(255, 255, 255, 0.8); /* سفید کم‌رنگ برای تصویر */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .image-block img {
+      max-width: 120px;
+      max-height: 120px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #000000; /* مشکی برای عنوان‌ها */
+    }
+
+    .text-block p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      color: #333333; /* مشکی تیره برای پاراگراف‌ها */
+    }
+
+    /* Contact section style */
+    #contact .text-block {
+      padding-top: 30px;
+    }
+
+    #contact h1 {
+      margin: 0;
+      font-size: 2.3rem;
+      color: #000000; /* مشکی برای نام */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* سایه برای خوانایی */
+    }
+
+    #contact p strong {
+      display: inline-block;
+      min-width: 100px;
+      color: #6B46C1; /* بنفش برای استرانگ‌ها */
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #6B46C1; /* بنفش برای دکمه */
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      z-index: 20;
+    }
+
+    #backToTop:hover {
+      background-color: #553C9A; /* بنفش تیره‌تر در هورور */
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#click-chemistry">Click Chemistry</a></li>
-            <li><a href="#vaccine-design">Vaccine Design</a></li>
-            <li><a href="#peptide-design">Peptide Design</a></li>
-            <li><a href="#antibody-design">Antibody Design</a></li>
-            <li><a href="#molecular-dynamics">Molecular Dynamics Simulation</a></li>
-            <li><a href="#genetic">Genetic</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Milad Bagheri</h1>
-    </header>
+
+<!-- Back to Top Button -->
+<a id="backToTop" href="#top" title="Back to Top">↑</a>
+
+<!-- Menu -->
+<header id="top">
+  <a href="#contact">Contact</a>
+  <a href="#click-chemistry">Click Chemistry</a>
+  <a href="#vaccine-design">Vaccine Design</a>
+  <a href="#peptide-design">Peptide Design</a>
+  <a href="#antibody-design">Antibody Design</a>
+  <a href="#molecular-dynamics">Molecular Dynamics</a>
+  <a href="#genetics">Genetics</a>
+</header>
+
+<!-- Contact Section -->
+<div class="section" id="contact">
+  <div class="text-block">
+    <h1>Milad Bagheri</h1>
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> milad9dxb@gmail.com</p>
+    <p><strong>Location:</strong> Dubai Downtown</p>
+    <p><strong>Phone:</strong> +971 52 152 70431</p>
+    <p><strong>Google Scholar:</strong> Milad Bagheri</p>
+    <p><strong>GitHub:</strong> github.com/yourprofile</p>
+  </div>
+  <div class="image-block">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Milad Bagheri">
+  </div>
+</div>
+
+<!-- Sections -->
+<div class="section" id="click-chemistry">
+  <div class="text-block">
+    <h2>Click Chemistry</h2>
+    <p>Click chemistry enables high-yield, selective reactions ideal for biomedical applications, such as drug development and materials science.</p>
+  </div>
+  <div class="image-block">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Click Chemistry">
+  </div>
+</div>
+
+<div class="section" id="vaccine-design">
+  <div class="text-block">
+    <h2>Vaccine Design</h2>
+    <p>Vaccine design uses computational biology and bioinformatics to predict antigens and optimize immune responses with minimal side effects.</p>
+  </div>
+  <div class="image-block">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Vaccine Design">
+  </div>
+</div>
+
+<div class="section" id="peptide-design">
+  <div class="text-block">
+    <h2>Peptide Design</h2>
+    <p>Design of synthetic peptides for therapeutic applications, utilizing modeling tools to predict stable and functional peptide structures.</p>
+  </div>
+  <div class="image-block">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Peptide Design">
+  </div>
+</div>
+
+<div class="section" id="antibody-design">
+  <div class="text-block">
+    <h2>Antibody Design</h2>
+    <p>Antibody engineering targets specific proteins for treatment or detection. In silico tools improve affinity, selectivity, and stability.</p>
+  </div>
+  <div class="image-block">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Antibody Design">
+  </div>
+</div>
+
+<div class="section" id="molecular-dynamics">
+  <div class="text-block">
+    <h2>Molecular Dynamics</h2>
+    <p>Molecular dynamics simulates atomic interactions in biomolecules, providing insight into conformational changes and binding mechanisms.</p>
+  </div>
+  <div class="image-block">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Molecular Dynamics">
+  </div>
+</div>
+
+<div class="section" id="genetics">
+  <div class="text-block">
+    <h2>Genetics</h2>
+    <p>Genetics focuses on DNA sequence analysis, gene expression, and mutation tracking to understand and treat genetic disorders more effectively.</p>
+  </div>
+  <div class="image-block">
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Genetics">
+  </div>
+</div>
+
 </body>
 </html>
