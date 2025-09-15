@@ -1,111 +1,29 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milad Bagheri</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #a3bffa; /* رنگ آبی ملایم مرتبط با بیولوژی کامپیوتری */
-            color: #333;
-        }
-        nav {
-            background-color: #f0f0f0;
-            width: 100%;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #666; /* رنگ کم‌رنگ برای تب‌ها */
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #000;
-        }
-        .content {
-            text-align: center;
-        }
-        .content h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .icons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .icons a {
-            text-decoration: none;
-            color: #333;
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-        .icons a i {
-            margin-right: 5px;
-        }
-        /* نمایش فقط متن تب انتخاب‌شده */
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#" onclick="showTab('contact')">Contact</a></li>
-            <li><a href="#" onclick="showTab('click-chemistry')">Click Chemistry</a></li>
-            <li><a href="#" onclick="showTab('vaccine-design')">Vaccine Design</a></li>
-            <li><a href="#" onclick="showTab('peptide-design')">Peptide Design</a></li>
-            <li><a href="#" onclick="showTab('antibody-design')">Antibody Design</a></li>
-            <li><a href="#" onclick="showTab('molecular-dynamics')">Molecular Dynamics</a></li>
-            <li><a href="#" onclick="showTab('genetics')">Genetics</a></li>
-        </ul>
-    </nav>
-
-    <div class="content">
-        <h1>Milad Bagheri</h1>
-        <div class="icons" id="contact-tab" class="tab-content active">
-            <a href="mailto:milad9dxb@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-map-marker"></i> Dubai Downtown</a>
-            <a href="tel:+9715215270431"><i class="fas fa-phone"></i> +971 52 152 70431</a>
-            <a href="https://scholar.google.com/citations?user=yourprofile"><i class="fab fa-google"></i> Google Scholar</a>
-            <a href="https://github.com/yourprofile"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-        <div class="tab-content" id="click-chemistry-tab">Click Chemistry</div>
-        <div class="tab-content" id="vaccine-design-tab">Vaccine Design</div>
-        <div class="tab-content" id="peptide-design-tab">Peptide Design</div>
-        <div class="tab-content" id="antibody-design-tab">Antibody Design</div>
-        <div class="tab-content" id="molecular-dynamics-tab">Molecular Dynamics</div>
-        <div class="tab-content" id="genetics-tab">Genetics</div>
-    </div>
-
-    <script>
-        function showTab(tabId) {
-            const tabs = document.querySelectorAll('.tab-content');
-            tabs.forEach(tab => tab.classList.remove('active'));
-            document.getElementById(tabId + '-tab').classList.add('active');
-        }
-    </script>
-</body>
-</html>
+<div style="width: 1280px; height: 832px; position: relative; background: #0E302F; overflow: hidden; border-radius: 10px">
+  <div style="width: 1280px; height: 56px; left: 0px; top: 0px; position: absolute; background: #386261"></div>
+  <div style="left: 120px; top: 193px; position: absolute; color: white; font-size: 64px; font-family: Playfair Display; font-weight: 700; word-wrap: break-word">Hello, my name<br/>is Jons Toye</div>
+  <div style="left: 120px; top: 16px; position: absolute; color: white; font-size: 18px; font-family: Playfair Display; font-weight: 600; word-wrap: break-word">Jons Toye</div>
+  <div style="width: 486px; left: 120px; top: 369px; position: absolute; opacity: 0.80; color: rgba(255, 255, 255, 0.80); font-size: 24px; font-family: Nunito; font-weight: 400; line-height: 36px; word-wrap: break-word">Short text with details about you, what you<br/>do or your professional. you can add more<br/>information on the about pages</div>
+  <div style="width: 115px; height: 43px; left: 270px; top: 552px; position: absolute; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.10); border-radius: 10px; border: 2px #FCB336 solid"></div>
+  <div style="width: 115px; height: 43px; left: 120px; top: 552px; position: absolute; background: #FCB336; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.10); border-radius: 10px"></div>
+  <div style="left: 144px; top: 560px; position: absolute; color: black; font-size: 18px; font-family: Roboto; font-weight: 500; line-height: 27px; word-wrap: break-word">Projects</div>
+  <div style="width: 715px; height: 704px; left: 620px; top: -143px; position: absolute; background: #FCB336"></div>
+  <div style="left: 1001px; top: 17px; position: absolute; color: black; font-size: 16px; font-family: Playfair Display; font-weight: 400; word-wrap: break-word">Contracts</div>
+  <div style="left: 784px; top: 17px; position: absolute; color: black; font-size: 16px; font-family: Playfair Display; font-weight: 400; word-wrap: break-word">About</div>
+  <div style="left: 885px; top: 17px; position: absolute; color: black; font-size: 16px; font-family: Playfair Display; font-weight: 400; word-wrap: break-word">Projects</div>
+  <div style="width: 652.08px; height: 736px; left: 647px; top: -173px; position: absolute; background: #FFC637"></div>
+  <img style="width: 604.24px; height: 527.87px; left: 647px; top: 35.13px; position: absolute" src="https://placehold.co/604x528" />
+  <div style="width: 48.06px; height: 58.60px; left: 533.43px; top: 99.18px; position: absolute; background: #FECD1A"></div>
+  <div style="width: 48.06px; height: 58.60px; left: 815px; top: 477px; position: absolute; background: #FECD1A"></div>
+  <div style="width: 36.60px; height: 36.49px; left: 583.66px; top: 150.98px; position: absolute; background: #FECD1A"></div>
+  <div style="width: 39.17px; height: 52.44px; left: 508.13px; top: 165.56px; position: absolute; background: #FECD1A"></div>
+  <div style="width: 12.39px; height: 16.66px; left: 610.03px; top: 111.82px; position: absolute; background: #FECD1A"></div>
+  <div style="width: 10.14px; height: 13.64px; left: 488px; top: 134.57px; position: absolute; background: #FECD1A"></div>
+  <div style="width: 13.97px; height: 18.78px; left: 520.72px; top: 79px; position: absolute; background: #FECD1A"></div>
+  <div style="width: 6.80px; height: 9.14px; left: 591.11px; top: 88.39px; position: absolute; background: #FECD1A"></div>
+  <div style="left: 481px; top: 728px; position: absolute; color: white; font-size: 20px; font-family: Manrope; font-weight: 700; line-height: 24px; letter-spacing: 6.20px; word-wrap: break-word">WE ARE FEATURED ON</div>
+  <div style="width: 61px; height: 39px; left: 174px; top: 786px; position: absolute; opacity: 0.60; background: white"></div>
+  <div style="width: 81px; height: 39px; left: 404px; top: 786px; position: absolute; opacity: 0.60; background: white"></div>
+  <div style="width: 118px; height: 31px; left: 701px; top: 790px; position: absolute; opacity: 0.60; background: white"></div>
+  <div style="width: 118px; height: 33px; left: 988px; top: 789px; position: absolute; opacity: 0.60; background: white"></div>
+  <div style="left: 283px; top: 560px; position: absolute; color: white; font-size: 18px; font-family: Roboto; font-weight: 500; line-height: 27px; word-wrap: break-word">Book a call</div>
+</div>
