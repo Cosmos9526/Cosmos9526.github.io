@@ -1,82 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Milad Bagheri - Research Portfolio</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milad Bagheri - Research Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        body {
-            background-image: url("oYo-Link-Click-Chemistry-Category-Icon.png");
-            background-size: contain;             /* تصویر رو داخل صفحه جا میده */
-            background-repeat: no-repeat;         /* جلوگیری از تکرار */
-            background-position: center center;   /* وسط‌چین */
-            background-attachment: fixed;
-            display: flex;
-            flex-direction: column;
-        }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("oYo-Link-Click-Chemistry-Category-Icon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-        nav {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
-        }
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            padding: 5px 15px;
-        }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
 
-        nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-        }
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
 
-        header {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    header {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 60vh;
+    }
 
-        h1 {
-            font-size: 4em;
-            margin: 0;
-            color: black; /* ← رنگ مشکی برای بهتر دیده شدن روی تصویر سفید */
-            text-shadow: 1px 1px 2px white; /* کنتراست بهتر */
-        }
-    </style>
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      color: black;
+      text-shadow: 2px 2px 4px white;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    section p, .contact-info a {
+      font-size: 1.1em;
+      line-height: 1.7em;
+      color: #444;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-info a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#click-chemistry">Click Chemistry</a></li>
-            <li><a href="#vaccine-design">Vaccine Design</a></li>
-            <li><a href="#peptide-design">Peptide Design</a></li>
-            <li><a href="#antibody-design">Antibody Design</a></li>
-            <li><a href="#molecular-dynamics">Molecular Dynamics Simulation</a></li>
-            <li><a href="#genetic">Genetic</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Milad Bagheri</h1>
-    </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#click-chemistry">Click Chemistry</a></li>
+      <li><a href="#vaccine-design">Vaccine Design</a></li>
+      <li><a href="#peptide-design">Peptide Design</a></li>
+      <li><a href="#antibody-design">Antibody Design</a></li>
+      <li><a href="#molecular-dynamics">Molecular Dynamics Simulation</a></li>
+      <li><a href="#genetic">Genetic</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Milad Bagheri</h1>
+  </header>
+
+  <!-- Sections -->
+  <section id="click-chemistry">
+    <h2>Click Chemistry</h2>
+    <p>
+      Click chemistry is a modular approach to chemical synthesis based on simple, high-yielding reactions. It plays a critical role in bioorthogonal labeling and drug design.
+    </p>
+  </section>
+
+  <section id="vaccine-design">
+    <h2>Vaccine Design</h2>
+    <p>
+      Computational vaccine design integrates epitope prediction, structural modeling, and immunoinformatics tools to develop effective and targeted vaccines.
+    </p>
+  </section>
+
+  <section id="peptide-design">
+    <h2>Peptide Design</h2>
+    <p>
+      Peptide therapeutics involve designing amino acid chains that can mimic or inhibit protein-protein interactions, with high specificity and low toxicity.
+    </p>
+  </section>
+
+  <section id="antibody-design">
+    <h2>Antibody Design</h2>
+    <p>
+      Antibody engineering combines computational modeling and molecular biology to create antibodies with enhanced affinity, specificity, and stability.
+    </p>
+  </section>
+
+  <section id="molecular-dynamics">
+    <h2>Molecular Dynamics Simulation</h2>
+    <p>
+      Molecular dynamics simulations provide atomistic insights into the behavior of biomolecules, helping researchers predict conformational changes and binding mechanisms.
+    </p>
+  </section>
+
+  <section id="genetic">
+    <h2>Genetic</h2>
+    <p>
+      Genetic engineering in computational biology involves analyzing gene expression data, predicting gene functions, and simulating genetic modifications.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:milad9dxb@gmail.com">milad9dxb@gmail.com</a></p>
+      <p><strong>Location:</strong> Dubai Downtown</p>
+      <p><strong>Phone:</strong> <a href="tel:+971527040319">+971 52 704 0319</a></p>
+      <p><strong>Google Scholar:</strong> 
+        <a href="https://scholar.google.com/citations?user=ArhW6SEAAAAJ&hl=en" target="_blank">
+          scholar.google.com/citations
+        </a>
+      </p>
+      <p><strong>GitHub:</strong> 
+        <a href="https://github.com/cosmos9526" target="_blank">
+          github.com/cosmos9526
+        </a>
+      </p>
+    </div>
+  </section>
+
 </body>
 </html>
