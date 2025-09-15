@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milad Bagheri - Research Portfolio</title>
     <style>
-        body {
+        html, body {
             margin: 0;
+            padding: 0;
+            height: 100%;
             font-family: Arial, sans-serif;
-            background-image: url("oYo-Link-Click-Chemistry-Category-Icon.png"); /* Placeholder image, replace with your image later */
-            background-size: 70% auto;
+        }
+
+        body {
+            background-image: url("oYo-Link-Click-Chemistry-Category-Icon.png");
+            background-size: contain; /* تصویر بدون کشیدگی فیت بشه */
+            background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
-            height: 100vh;
             display: flex;
             flex-direction: column;
         }
+
         nav {
-            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent bar */
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 10px 0;
         }
+
         nav ul {
             list-style-type: none;
             margin: 0;
@@ -28,19 +35,19 @@
             justify-content: center;
             gap: 20px;
         }
-        nav ul li {
-            display: inline;
-        }
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-size: 1.2em;
             padding: 5px 15px;
         }
+
         nav ul li a:hover {
             background-color: rgba(255, 255, 255, 0.2);
             border-radius: 5px;
         }
+
         header {
             flex-grow: 1;
             display: flex;
@@ -50,6 +57,7 @@
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+
         h1 {
             font-size: 4em;
             margin: 0;
