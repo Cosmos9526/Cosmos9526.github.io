@@ -11,15 +11,43 @@
     background: #f9f9f9;
     color: #222;
   }
-  header {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  
+  /* New Section style for header + contact */
+  #intro-contact {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #e3f2fd; /* Light blue */
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.05);
+    transition: background-color 0.3s ease;
+    cursor: default;
   }
-  header h1 {
-    margin: 0;
+  #intro-contact:hover {
+    background-color: #bbdefb; /* Slightly darker on hover */
   }
+  
+  #intro-contact h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #0d47a1; /* Darker blue */
+    margin-bottom: 15px;
+  }
+  
+  #intro-contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  #intro-contact a {
+    color: #0d47a1;
+    text-decoration: none;
+  }
+  #intro-contact a:hover {
+    text-decoration: underline;
+  }
+
   .tabs {
     display: flex;
     justify-content: center;
@@ -55,9 +83,16 @@
 </head>
 <body>
 
-<header>
+<!-- Intro + Contact Section -->
+<section id="intro-contact">
   <h1>Milad Bagheri</h1>
-</header>
+  <h2>Contact Me</h2>
+  <p><strong>Email:</strong> <a href="mailto:milad9dxb@gmail.com">milad9dxb@gmail.com</a></p>
+  <p><strong>Location:</strong> Dubai Downtown</p>
+  <p><strong>Phone:</strong> <a href="tel:+9715215270431">+971 52 152 70431</a></p>
+  <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=ArhW6SEAAAAJ&hl=en" target="_blank" rel="noopener">Milad Bagheri</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourprofile</a></p>
+</section>
 
 <div class="tabs">
   <button class="tablink active" onclick="openTab(event, 'click')">Click Chemistry</button>
@@ -66,7 +101,6 @@
   <button class="tablink" onclick="openTab(event, 'antibody')">Antibody Design</button>
   <button class="tablink" onclick="openTab(event, 'molecular')">Molecular Dynamics</button>
   <button class="tablink" onclick="openTab(event, 'genetics')">Genetics</button>
-  <button class="tablink" onclick="openTab(event, 'contact')">Contact</button>
 </div>
 
 <div id="click" class="tab-content" style="display: block;">
@@ -99,29 +133,13 @@
   <p>Genetic studies analyze the structure and function of genes, playing a key role in developing targeted treatments and disease diagnosis.</p>
 </div>
 
-<div id="contact" class="tab-content" style="display: none;">
-  <h2>Contact Me</h2>
-  <p><strong>Email:</strong> <a href="mailto:milad9dxb@gmail.com">milad9dxb@gmail.com</a></p>
-  <p><strong>Location:</strong> Dubai Downtown</p>
-  <p><strong>Phone:</strong> <a href="tel:+9715215270431">+971 52 152 70431</a></p>
-  <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=ArhW6SEAAAAJ&hl=en" target="_blank" rel="noopener">Milad Bagheri</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourprofile</a></p>
-</div>
-
 <script>
   function openTab(evt, tabName) {
-    // Hide all tab contents
     const contents = document.querySelectorAll('.tab-content');
     contents.forEach(content => content.style.display = 'none');
-
-    // Remove active class from all buttons
     const tabs = document.querySelectorAll('.tablink');
     tabs.forEach(tab => tab.classList.remove('active'));
-
-    // Show the clicked tab content
     document.getElementById(tabName).style.display = 'block';
-
-    // Add active class to clicked button
     evt.currentTarget.classList.add('active');
   }
 </script>
