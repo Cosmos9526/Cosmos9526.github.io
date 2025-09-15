@@ -1,191 +1,231 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Milad Bagheri - Research Portfolio</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Milad Bagheri - Research Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* تغییر رنگ لوگو به مشکی */
+			#header .logo {
+				color: black !important;
+				font-weight: bold;
+				font-size: 1.5rem;
+			}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url("oYo-Link-Click-Chemistry-Category-Icon.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-attachment: fixed;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+			/* تغییر رنگ لینک‌های ناوبری به مشکی */
+			#nav ul.links li a {
+				color: black !important;
+			}
+			#nav ul.links li.active a,
+			#nav ul.links li a:hover {
+				color: #0078d7 !important; /* رنگ آبی برای هاور */
+			}
 
-    nav {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+			/* فضای اضافی بالای بخش‌ها برای جای هدر */
+			section {
+				padding-top: 4rem;
+				margin-top: 3rem;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.1em;
-      padding: 8px 15px;
-      border-radius: 5px;
-    }
+			<!-- Intro -->
+			<div id="intro">
+				<h1>Milad Bagheri</h1>
+				<p>Computational Research Portfolio</p>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
+			</div>
 
-    nav ul li a:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
+			<!-- Header -->
+			<header id="header">
+				<a href="#intro" class="logo">Milad Bagheri</a>
+			</header>
 
-    header {
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      min-height: 60vh;
-    }
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="#click-chemistry">Click Chemistry</a></li>
+					<li><a href="#vaccine-design">Vaccine Design</a></li>
+					<li><a href="#peptide-design">Peptide Design</a></li>
+					<li><a href="#antibody-design">Antibody Design</a></li>
+					<li><a href="#molecular-dynamics">Molecular Dynamics</a></li>
+					<li><a href="#genetic">Genetic</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://twitter.com/" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://facebook.com/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://instagram.com/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
 
-    header h1 {
-      font-size: 3.5em;
-      margin: 0;
-      color: black;
-      text-shadow: 2px 2px 4px white;
-    }
+			<!-- Main -->
+			<div id="main">
 
-    section {
-      padding: 100px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      min-height: 100vh;
-    }
+				<!-- Click Chemistry -->
+				<section id="click-chemistry" class="posts">
+					<article>
+						<header>
+							<h2>Click Chemistry</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit facilisis magna, et vehicula libero tempus nec.</p>
+					</article>
+				</section>
 
-    section h2 {
-      color: #333;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
+				<!-- Vaccine Design -->
+				<section id="vaccine-design" class="posts">
+					<article>
+						<header>
+							<h2>Vaccine Design</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut elit a sapien scelerisque fringilla ut eu metus.</p>
+					</article>
+				</section>
 
-    section p, .contact-info a {
-      font-size: 1.1em;
-      line-height: 1.7em;
-      color: #444;
-    }
+				<!-- Peptide Design -->
+				<section id="peptide-design" class="posts">
+					<article>
+						<header>
+							<h2>Peptide Design</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a dolor suscipit, lobortis magna a, consequat libero.</p>
+					</article>
+				</section>
 
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+				<!-- Antibody Design -->
+				<section id="antibody-design" class="posts">
+					<article>
+						<header>
+							<h2>Antibody Design</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae purus ut odio convallis congue.</p>
+					</article>
+				</section>
 
-    .contact-info a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+				<!-- Molecular Dynamics -->
+				<section id="molecular-dynamics" class="posts">
+					<article>
+						<header>
+							<h2>Molecular Dynamics Simulation</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+					</article>
+				</section>
 
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+				<!-- Genetic -->
+				<section id="genetic" class="posts">
+					<article>
+						<header>
+							<h2>Genetic</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Sed a dapibus erat.</p>
+					</article>
+				</section>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#click-chemistry">Click Chemistry</a></li>
-      <li><a href="#vaccine-design">Vaccine Design</a></li>
-      <li><a href="#peptide-design">Peptide Design</a></li>
-      <li><a href="#antibody-design">Antibody Design</a></li>
-      <li><a href="#molecular-dynamics">Molecular Dynamics Simulation</a></li>
-      <li><a href="#genetic">Genetic</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+				<!-- Contact -->
+				<section id="contact" class="posts">
+					<article>
+						<header>
+							<h2>Contact</h2>
+						</header>
+						<p><strong>Email:</strong> <a href="mailto:milad9dxb@gmail.com">milad9dxb@gmail.com</a></p>
+						<p><strong>Location:</strong> Dubai Downtown</p>
+						<p><strong>Phone:</strong> 0971527040319</p>
+						<p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=ArhW6SEAAAAJ&hl=en" target="_blank">Milad's Google Scholar</a></p>
+						<p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank">github.com/username</a></p>
+					</article>
+				</section>
 
-  <!-- Hero Section -->
-  <header>
-    <h1>Milad Bagheri</h1>
-  </header>
+			</div>
 
-  <!-- Sections -->
-  <section id="click-chemistry">
-    <h2>Click Chemistry</h2>
-    <p>
-      Click chemistry is a class of biocompatible reactions that are fast, selective, and produce high yields. These reactions are widely used in drug discovery, diagnostics, and bioconjugation. The most common click reaction is the azide-alkyne cycloaddition, useful for labeling biomolecules without disrupting biological systems.
-    </p>
-  </section>
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="3"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split contact">
+					<section class="alt">
+						<h3>Address</h3>
+						<p>Dubai Downtown<br />United Arab Emirates</p>
+					</section>
+					<section>
+						<h3>Phone</h3>
+						<p><a href="tel:0971527040319">0971527040319</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="mailto:milad9dxb@gmail.com">milad9dxb@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://twitter.com/" target="_blank" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://facebook.com/" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://instagram.com/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
 
-  <section id="vaccine-design">
-    <h2>Vaccine Design</h2>
-    <p>
-      Computational vaccine design uses tools like epitope mapping, molecular docking, and immunoinformatics to predict and optimize antigens. This approach speeds up development, especially for mRNA and peptide-based vaccines targeting viruses and cancer antigens.
-    </p>
-  </section>
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>&copy; Milad Bagheri</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
 
-  <section id="peptide-design">
-    <h2>Peptide Design</h2>
-    <p>
-      Peptide design involves predicting stable, functional sequences for therapeutic or diagnostic use. Algorithms model 3D folding and interaction with target proteins, helping create peptides that mimic natural ligands or inhibit disease pathways with precision.
-    </p>
-  </section>
+		</div>
 
-  <section id="antibody-design">
-    <h2>Antibody Design</h2>
-    <p>
-      Antibody design focuses on optimizing binding affinity and specificity to antigens using computational models. Techniques include CDR loop modeling, affinity maturation simulations, and structure-guided engineering. It’s widely used in therapeutic antibody development.
-    </p>
-  </section>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-  <section id="molecular-dynamics">
-    <h2>Molecular Dynamics Simulation</h2>
-    <p>
-      Molecular dynamics simulations provide time-resolved, atomistic views of molecular systems. They're essential in drug design, protein folding studies, and binding interaction predictions. Simulations are performed with tools like GROMACS, AMBER, or NAMD.
-    </p>
-  </section>
+		<script>
+			// فعال کردن smooth scroll برای لینک‌های داخل منو
+			$(document).ready(function() {
+				$("#nav ul.links li a").click(function(event) {
+					event.preventDefault();
 
-  <section id="genetic">
-    <h2>Genetic</h2>
-    <p>
-      In computational genetics, bioinformatics tools analyze genomic sequences, predict gene functions, and simulate genetic variants. CRISPR target prediction, GWAS, and transcriptomics analysis are part of this field, helping uncover mechanisms of disease.
-    </p>
-  </section>
+					var target = $(this).attr("href");
+					if (target.length) {
+						$("html, body").animate({
+							scrollTop: $(target).offset().top - 60
+						}, 600);
+					}
+				});
+			});
+		</script>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:milad9dxb@gmail.com">milad9dxb@gmail.com</a></p>
-      <p><strong>Location:</strong> Dubai Downtown</p>
-      <p><strong>Phone:</strong> <a href="tel:+971527040319">+971 52 704 0319</a></p>
-      <p><strong>Google Scholar:</strong> 
-        <a href="https://scholar.google.com/citations?user=ArhW6SEAAAAJ&hl=en" target="_blank">
-          scholar.google.com/citations
-        </a>
-      </p>
-      <p><strong>GitHub:</strong> 
-        <a href="https://github.com/cosmos9526" target="_blank">
-          github.com/cosmos9526
-        </a>
-      </p>
-    </div>
-  </section>
-
-</body>
+	</body>
 </html>
