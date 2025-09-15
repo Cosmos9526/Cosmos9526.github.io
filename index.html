@@ -3,252 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Milad Bagheri - Profile</title>
+  <title>Milad Bagheri</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #6B46C1;
-      background-size: 70% auto;
-      background-position: center;
-      background-attachment: fixed;
-      color: #000000;
-      scroll-behavior: smooth;
       display: flex;
       flex-direction: column;
+      align-items: center;
       min-height: 100vh;
+      color: #000000;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .info p {
+      margin: 5px 0;
     }
 
     header {
       background-color: rgba(255, 255, 255, 0.9);
-      padding: 10px 40px;
-      display: flex;
-      gap: 20px;
+      padding: 10px 20px;
+      width: 100%;
       position: sticky;
       top: 0;
       z-index: 10;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     header a {
       color: #6B46C1;
       text-decoration: none;
       font-weight: bold;
-      padding: 8px 14px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-
-    header a:hover {
-      background-color: rgba(107, 70, 193, 0.2);
-    }
-
-    .hero {
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #000000;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    h1 {
-      font-size: 6em;
-      margin: 0;
-    }
-
-    .section {
-      display: none;
-      align-items: stretch;
-      margin: 40px auto;
-      max-width: 1300px;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      background-color: rgba(255, 255, 255, 0.9);
-      transition: background-color 0.3s ease;
-    }
-
-    .section.active {
-      display: flex;
-    }
-
-    .text-block {
-      padding: 40px 30px;
-      flex: 3;
-    }
-
-    .image-block {
-      flex: 1.2;
-      background-color: rgba(255, 255, 255, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
-    }
-
-    .image-block img {
-      max-width: 120px;
-      max-height: 120px;
-      border-radius: 16px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #000000;
-    }
-
-    .text-block p {
-      line-height: 1.7;
-      font-size: 1.05rem;
-      color: #333333;
-    }
-
-    /* Contact section style */
-    #contact .text-block {
-      padding-top: 30px;
-    }
-
-    #contact h1 {
-      margin: 0;
-      font-size: 2.3rem;
-      color: #000000;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    #contact p strong {
-      display: inline-block;
-      min-width: 100px;
-      color: #6B46C1;
-    }
-
-    #contact .social-icons {
-      margin-top: 20px;
-    }
-
-    #contact .social-icons a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #6B46C1;
-    }
-
-    #contact .social-icons img {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle;
+      margin: 0 15px;
     }
   </style>
 </head>
 <body>
-  <!-- Hero Section -->
+  <header>
+    <a href="#contact">Contact</a>
+    <a href="#click-chemistry">Click Chemistry</a>
+    <a href="#vaccine-design">Vaccine Design</a>
+    <a href="#peptide-design">Peptide Design</a>
+    <a href="#antibody-design">Antibody Design</a>
+    <a href="#molecular-dynamics">Molecular Dynamics</a>
+    <a href="#genetics">Genetics</a>
+  </header>
+
   <div class="hero">
     <h1>Milad Bagheri</h1>
   </div>
 
-  <!-- Sections Container -->
-  <div class="sections">
-    <!-- Contact Section -->
-    <div class="section" id="contact">
-      <div class="text-block">
-        <h1>Milad Bagheri</h1>
-        <h2>Contact Me</h2>
-        <p><strong>Email:</strong> milad9dxb@gmail.com</p>
-        <p><strong>Location:</strong> Dubai Downtown</p>
-        <p><strong>Phone:</strong> +971 52 152 70431</p>
-        <p><strong>Google Scholar:</strong> Milad Bagheri</p>
-        <p><strong>GitHub:</strong> github.com/yourprofile</p>
-        <div class="social-icons">
-          <a href="https://wa.me/+9715215270431" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-            WhatsApp
-          </a>
-        </div>
-      </div>
-      <div class="image-block">
-        <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Milad Bagheri">
-      </div>
-    </div>
+  <div class="info" id="contact">
+    <p>Email: milad9dxb@gmail.com</p>
+    <p>Location: Dubai Downtown</p>
+    <p>Phone: +971 52 152 70431</p>
+    <p>Google Scholar: Milad Bagheri</p>
+    <p>GitHub: github.com/yourprofile</p>
+  </div>
 
-    <!-- Click Chemistry Section -->
-    <div class="section" id="click-chemistry">
-      <div class="text-block">
-        <h2>Click Chemistry</h2>
-        <p>Click chemistry enables high-yield, selective reactions ideal for biomedical applications, such as drug development and materials science.</p>
-      </div>
-      <div class="image-block">
-        <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Click Chemistry">
-      </div>
-    </div>
+  <div class="info" id="click-chemistry" style="display: none;">
+    <p>Click Chemistry: Enables high-yield, selective reactions for biomedical applications.</p>
+  </div>
 
-    <!-- Vaccine Design Section -->
-    <div class="section" id="vaccine-design">
-      <div class="text-block">
-        <h2>Vaccine Design</h2>
-        <p>Vaccine design uses computational biology and bioinformatics to predict antigens and optimize immune responses with minimal side effects.</p>
-      </div>
-      <div class="image-block">
-        <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Vaccine Design">
-      </div>
-    </div>
+  <div class="info" id="vaccine-design" style="display: none;">
+    <p>Vaccine Design: Uses computational biology to optimize immune responses.</p>
+  </div>
 
-    <!-- Peptide Design Section -->
-    <div class="section" id="peptide-design">
-      <div class="text-block">
-        <h2>Peptide Design</h2>
-        <p>Design of synthetic peptides for therapeutic applications, utilizing modeling tools to predict stable and functional peptide structures.</p>
-      </div>
-      <div class="image-block">
-        <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Peptide Design">
-      </div>
-    </div>
+  <div class="info" id="peptide-design" style="display: none;">
+    <p>Peptide Design: Creates synthetic peptides for therapeutic use.</p>
+  </div>
 
-    <!-- Antibody Design Section -->
-    <div class="section" id="antibody-design">
-      <div class="text-block">
-        <h2>Antibody Design</h2>
-        <p>Antibody engineering targets specific proteins for treatment or detection. In silico tools improve affinity, selectivity, and stability.</p>
-      </div>
-      <div class="image-block">
-        <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Antibody Design">
-      </div>
-    </div>
+  <div class="info" id="antibody-design" style="display: none;">
+    <p>Antibody Design: Engineers proteins for treatment with in silico tools.</p>
+  </div>
 
-    <!-- Molecular Dynamics Section -->
-    <div class="section" id="molecular-dynamics">
-      <div class="text-block">
-        <h2>Molecular Dynamics</h2>
-        <p>Molecular dynamics simulates atomic interactions in biomolecules, providing insight into conformational changes and binding mechanisms.</p>
-      </div>
-      <div class="image-block">
-        <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Molecular Dynamics">
-      </div>
-    </div>
+  <div class="info" id="molecular-dynamics" style="display: none;">
+    <p>Molecular Dynamics: Simulates atomic interactions in biomolecules.</p>
+  </div>
 
-    <!-- Genetics Section -->
-    <div class="section" id="genetics">
-      <div class="text-block">
-        <h2>Genetics</h2>
-        <p>Genetics focuses on DNA sequence analysis, gene expression, and mutation tracking to understand and treat genetic disorders more effectively.</p>
-      </div>
-      <div class="image-block">
-        <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Genetics">
-      </div>
-    </div>
+  <div class="info" id="genetics" style="display: none;">
+    <p>Genetics: Analyzes DNA for understanding genetic disorders.</p>
   </div>
 
   <script>
-    // Handle tab clicks to scroll to sections
     document.querySelectorAll("header a").forEach(anchor => {
       anchor.addEventListener("click", function(e) {
         e.preventDefault();
         const targetId = this.getAttribute("href").substring(1);
-        document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+        document.querySelectorAll(".info").forEach(section => {
+          section.style.display = "none";
+        });
+        document.getElementById(targetId).style.display = "block";
+        window.scrollTo({ top: document.getElementById(targetId).offsetTop, behavior: "smooth" });
       });
     });
   </script>
