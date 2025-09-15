@@ -44,8 +44,8 @@
       display: flex;
       align-items: stretch;
       margin: 40px auto;
-      max-width: 1100px;
-      border-radius: 20px;
+      max-width: 1300px;
+      border-radius: 24px;
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       background-color: #e6f1ff;
@@ -57,23 +57,23 @@
     }
 
     .text-block {
-      padding: 30px 25px;
+      padding: 40px 30px;
       flex: 3;
     }
 
     .image-block {
-      flex: 1;
+      flex: 1.2;
       background-color: #d0e8ff;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 30px;
     }
 
     .image-block img {
-      max-width: 80px;
-      max-height: 80px;
-      border-radius: 12px;
+      max-width: 120px;
+      max-height: 120px;
+      border-radius: 16px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -89,12 +89,12 @@
 
     /* Contact section style */
     #contact .text-block {
-      padding-top: 20px;
+      padding-top: 30px;
     }
 
     #contact h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.3rem;
       color: #004b9a;
     }
 
@@ -110,13 +110,14 @@
       right: 25px;
       background-color: #007bff;
       color: white;
-      padding: 10px 14px;
+      padding: 12px 16px;
       border-radius: 50%;
       font-size: 20px;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       text-decoration: none;
       transition: background-color 0.3s ease;
+      z-index: 20;
     }
 
     #backToTop:hover {
@@ -127,7 +128,7 @@
 <body>
 
 <!-- Back to Top Button -->
-<a id="backToTop" href="#top">↑</a>
+<a id="backToTop" href="#top" title="Back to Top">↑</a>
 
 <!-- Menu -->
 <header id="top">
