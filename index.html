@@ -1,124 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Milad Bagheri</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #9575CD; /* بنفش کمرنگ‌تر */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      color: #000000;
-    }
-
-    header {
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 10px 20px;
-      width: 100%;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header a {
-      color: #9575CD; /* بنفش کمرنگ‌تر */
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 15px;
-    }
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 4em;
-      margin: 0;
-      transition: transform 0.3s ease, font-size 0.3s ease;
-    }
-
-    .info {
-      text-align: center;
-      margin-top: 20px;
-      display: none;
-    }
-
-    .info p {
-      margin: 5px 0;
-    }
-
-    .active .name {
-      transform: translateX(-50%);
-      font-size: 2em;
-    }
-
-    .active .info {
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milad Bagheri</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #a3bffa; /* رنگ آبی ملایم مرتبط با بیولوژی کامپیوتری */
+            color: #333;
+        }
+        nav {
+            background-color: #f0f0f0;
+            width: 100%;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #666; /* رنگ کم‌رنگ برای تب‌ها */
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #000;
+        }
+        .content {
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .icons a {
+            text-decoration: none;
+            color: #333;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .icons a i {
+            margin-right: 5px;
+        }
+        /* نمایش فقط متن تب انتخاب‌شده */
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <a href="#contact">Contact</a>
-    <a href="#click-chemistry">Click Chemistry</a>
-    <a href="#vaccine-design">Vaccine Design</a>
-    <a href="#peptide-design">Peptide Design</a>
-    <a href="#antibody-design">Antibody Design</a>
-    <a href="#molecular-dynamics">Molecular Dynamics</a>
-    <a href="#genetics">Genetics</a>
-  </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+            <li><a href="#" onclick="showTab('click-chemistry')">Click Chemistry</a></li>
+            <li><a href="#" onclick="showTab('vaccine-design')">Vaccine Design</a></li>
+            <li><a href="#" onclick="showTab('peptide-design')">Peptide Design</a></li>
+            <li><a href="#" onclick="showTab('antibody-design')">Antibody Design</a></li>
+            <li><a href="#" onclick="showTab('molecular-dynamics')">Molecular Dynamics</a></li>
+            <li><a href="#" onclick="showTab('genetics')">Genetics</a></li>
+        </ul>
+    </nav>
 
-  <div class="content">
-    <h1 class="name">Milad Bagheri</h1>
-    <div class="info" id="contact">
-      <p>Email: milad9dxb@gmail.com</p>
-      <p>Location: Dubai Downtown</p>
-      <p>Phone: +971 52 152 70431</p>
-      <p>Google Scholar: Milad Bagheri</p>
-      <p>GitHub: github.com/yourprofile</p>
+    <div class="content">
+        <h1>Milad Bagheri</h1>
+        <div class="icons" id="contact-tab" class="tab-content active">
+            <a href="mailto:milad9dxb@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-map-marker"></i> Dubai Downtown</a>
+            <a href="tel:+9715215270431"><i class="fas fa-phone"></i> +971 52 152 70431</a>
+            <a href="https://scholar.google.com/citations?user=yourprofile"><i class="fab fa-google"></i> Google Scholar</a>
+            <a href="https://github.com/yourprofile"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="tab-content" id="click-chemistry-tab">Click Chemistry</div>
+        <div class="tab-content" id="vaccine-design-tab">Vaccine Design</div>
+        <div class="tab-content" id="peptide-design-tab">Peptide Design</div>
+        <div class="tab-content" id="antibody-design-tab">Antibody Design</div>
+        <div class="tab-content" id="molecular-dynamics-tab">Molecular Dynamics</div>
+        <div class="tab-content" id="genetics-tab">Genetics</div>
     </div>
-    <div class="info" id="click-chemistry">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="info" id="vaccine-design">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-    <div class="info" id="peptide-design">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-    </div>
-    <div class="info" id="antibody-design">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident.</p>
-    </div>
-    <div class="info" id="molecular-dynamics">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sunt in culpa qui officia deserunt mollit anim id est.</p>
-    </div>
-    <div class="info" id="genetics">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
-    </div>
-  </div>
 
-  <script>
-    document.querySelectorAll("header a").forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        const content = document.querySelector(".content");
-        content.classList.add("active");
-        document.querySelectorAll(".info").forEach(section => {
-          section.style.display = "none";
-        });
-        document.getElementById(targetId).style.display = "block";
-      });
-    });
-  </script>
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId + '-tab').classList.add('active');
+        }
+    </script>
 </body>
 </html>
