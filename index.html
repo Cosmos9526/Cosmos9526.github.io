@@ -1,188 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Milad Bagheri - Profile</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1a1a2e;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #16213e;
-      padding: 10px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #ffffff;
-    }
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 14px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-    nav a:hover {
-      background-color: #0f3460;
-    }
-    .services-dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #0f3460;
-      min-width: 160px;
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: #ffffff;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-content a:hover {
-      background-color: #1a1a2e;
-    }
-    .services-dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .hero {
-      display: flex;
-      align-items: center;
-      padding: 60px 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-      gap: 60px;
-    }
-    .hero-text h1 {
-      font-size: 3.5em;
-      margin: 0 0 20px 0;
-      color: #ffffff;
-    }
-    .hero-text p {
-      font-size: 1.2em;
-      margin: 0 0 30px 0;
-      color: #cccccc;
-    }
-    .hero-buttons {
-      display: flex;
-      gap: 15px;
-    }
-    .hero-buttons button {
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .email-btn {
-      background-color: #ffffff;
-      color: #1a1a2e;
-    }
-    .email-btn:hover {
-      background-color: #e0e0e0;
-    }
-    .cv-btn {
-      background-color: transparent;
-      color: #ffffff;
-      border: 2px solid #ffffff;
-    }
-    .cv-btn:hover {
-      background-color: #ffffff;
-      color: #1a1a2e;
-    }
-    .whatsapp-btn {
-      background-color: #25D366;
-      color: #ffffff;
-    }
-    .whatsapp-btn:hover {
-      background-color: #128C7E;
-    }
-    .telegram-btn {
-      background-color: #0088cc;
-      color: #ffffff;
-    }
-    .telegram-btn:hover {
-      background-color: #006ba3;
-    }
-    .hero-image {
-      flex: 1;
-      height: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .hero-image img {
-      width: 100%;
-      max-width: 600px;
-      opacity: 0.7;
-    }
-    .footer {
-      background-color: #16213e;
-      text-align: center;
-      padding: 20px;
-      font-size: 1em;
-      color: #cccccc;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Milad Bagheri - Profile</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+header {
+  background-color: #16213e;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: #0f3460;
+}
+/* Services dropdown */
+.services-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f3460;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #1a1a2e;
+}
+.services-dropdown:hover .dropdown-content {
+  display: block;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+.hero-text h1 {
+  font-size: 3.5em;
+  margin: 0 0 20px 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+.hero-text p {
+  font-size: 1.2em;
+  margin: 0 0 30px 0;
+  color: #cccccc;
+}
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+.hero-buttons button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.email-btn {
+  background-color: #ffffff;
+  color: #1a1a2e;
+}
+.email-btn:hover {
+  background-color: #e0e0e0;
+}
+.cv-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.cv-btn:hover {
+  background-color: #ffffff;
+  color: #1a1a2e;
+}
+.whatsapp-btn {
+  background-color: #25D366;
+  color: #ffffff;
+}
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+}
+.telegram-btn {
+  background-color: #0088cc;
+  color: #ffffff;
+}
+.telegram-btn:hover {
+  background-color: #006ba3;
+}
+/* Antibody image styling - big and faded */
+.antibody-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-20%, -55%);
+  width: 480px;
+  height: 480px;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+  object-fit: contain;
+}
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  min-width: 340px;
+  height: 440px;
+  position: relative;
+}
+.hero-image img {
+  display: none; /* The main visual is now handled by .antibody-bg */
+}
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .antibody-bg {
+    width: 320px;
+    height: 320px;
+    left: 55%;
+    top: 40%;
+    transform: translate(-30%, -50%);
+  }
+  .hero-image {
+    min-width: 200px;
+    height: 240px;
+  }
+}
+.featured {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: transparent;
+}
+.senior-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 36px 0 44px 0;
+  color: #ffffff;
+  letter-spacing: 2px;
+  background: #16213e;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+/* Remove featured logos! */
+.featured-logo {
+  display: none;
+}
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo">Milad Bagheri</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <div class="services-dropdown">
-        <a href="#services">Services</a>
-        <div class="dropdown-content">
-          <a href="#peptide-design">Peptide Design</a>
-          <a href="#antibody-design">Antibody Design</a>
-          <a href="#click-chemistry">Click Chemistry</a>
-          <a href="#molecular-dynamics">Molecular Dynamics Simulation</a>
-          <a href="#computational-genomics">Computational Genomics</a>
-        </div>
-      </div>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hello, my name is Milad Bagheri</h1>
-      <p>Short text with details about you, what you do or your professional, you can add more information on the about pages</p>
-      <div class="hero-buttons">
-        <button class="email-btn" onclick="window.location.href='mailto:milad9dxb@gmail.com'">Email me</button>
-        <button class="cv-btn" onclick="window.open('https://github.com/Cosmos9526/Cosmos9526.github.io/raw/main/Miladbagheri.pdf', '_blank')">Download CV</button>
-        <button class="whatsapp-btn" onclick="window.open('https://wa.me/0971527040319', '_blank')">WhatsApp</button>
-        <button class="telegram-btn" onclick="window.open('https://t.me/Christmas260895', '_blank')">Telegram</button>
+<header>
+  <div class="logo">Milad Bagheri</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <div class="services-dropdown">
+      <a href="#services">Services</a>
+      <div class="dropdown-content">
+        <a href="#peptide-design">Peptide Design</a>
+        <a href="#antibody-design">Antibody Design</a>
+        <a href="#click-chemistry">Click Chemistry</a>
+        <a href="#molecular-dynamics">Molecular Dynamics Simulation</a>
+        <a href="#computational-genomics">Computational Genomics</a>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Antibody Image">
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, my name is Milad Bagheri</h1>
+    <p>
+      Short text with details about you, what you do or your professional, you can add more information on the about pages
+      <br>
+      <span style="display:block;margin-top:18px;color:#6ee7ff;font-weight:500;">
+        <span style="font-size:1.04em;">📧</span> <a href="mailto:milad9dxb@gmail.com" style="color:#6ee7ff;text-decoration:underline;">milad9dxb@gmail.com</a>
+        <span style="margin-left:20px;font-size:1.04em;">📱</span> <span style="color:#6ee7ff;">+97152152704319</span>
+        <span style="margin-left:20px;font-size:1.04em;">✈️</span> <span style="color:#6ee7ff;">Telegram: <b>Christmas260895</b></span>
+      </span>
+    </p>
+    <div class="hero-buttons">
+      <button class="email-btn" onclick="window.location.href='mailto:milad9dxb@gmail.com'">Email me</button>
+      <button class="cv-btn" onclick="window.open('https://github.com/Cosmos9526/Cosmos9526.github.io/raw/main/Miladbagheri.pdf', '_blank')">Download CV</button>
+      <button class="whatsapp-btn" onclick="window.open('https://wa.me/+97152152704319', '_blank')">WhatsApp</button>
+      <button class="telegram-btn" onclick="window.open('https://t.me/Christmas260895', '_blank')">Telegram</button>
     </div>
-  </section>
-  <footer class="footer">
-    Senior Computational Biologist
-  </footer>
+  </div>
+  <div class="hero-image">
+    <!-- Hidden by CSS, but keeping for structure -->
+    <img src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Milad Bagheri">
+    <img class="antibody-bg" src="oYo-Link-Click-Chemistry-Category-Icon.png" alt="Antibody Large Faded"/>
+  </div>
+</section>
+<div class="senior-title">
+  Senior Computational Biologist
+</div>
 </body>
 </html>
