@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Milad Bagheri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Milad <span>Bagheri</span></div>
+                <nav>
+                    <div class="nav-item"><a href="index.html">Home</a></div>
+                    <div class="nav-item"><a href="active-projects.html">Active Projects</a></div>
+                    <div class="nav-item"><a href="news.html" class="active">News</a></div>
+                    <div class="nav-item services-dropdown">
+                        <a href="#services">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#peptide-design">Peptide Design</a>
+                            <a href="#antibody-design">Antibody Design</a>
+                            <a href="#click-chemistry">Click Chemistry</a>
+                            <a href="#molecular-dynamics">Molecular Dynamics Simulation</a>
+                            <a href="#computational-genomics">Computational Genomics</a>
+                        </div>
+                    </div>
+                    <div class="nav-item"><a href="#contact">Contact</a></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="news-hero">
+            <div class="container">
+                <h1 class="section-title">Latest <span>News</span></h1>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recent publications, awards, conferences, and updates from the computational biology lab.</p>
+            </div>
+        </section>
+
+        <section class="news-grid">
+            <div class="container">
+                <div class="news-list">
+                    <!-- خبر 1 -->
+                    <article class="news-card">
+                        <div class="news-date">Sep 15, 2025</div>
+                        <div class="news-content">
+                            <h3>New Paper Published in Nature Computational Science</h3>
+                            <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our latest research on AI-driven protein structure prediction using transformer models has been accepted for publication in Nature Computational Science. The paper introduces a novel approach that achieves 15% higher accuracy in alpha-helix prediction compared to existing methods.</p>
+                            <div class="news-meta">
+                                <span class="news-category">Publication</span>
+                                <span class="news-tags">#AI #ProteinFolding #MachineLearning</span>
+                            </div>
+                            <div class="news-links">
+                                <a href="#" class="news-link"><i class="fas fa-file-pdf"></i> Read Paper</a>
+                                <a href="#" class="news-link"><i class="fas fa-external-link-alt"></i> PubMed</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- خبر 2 -->
+                    <article class="news-card">
+                        <div class="news-date">Aug 28, 2025</div>
+                        <div class="news-content">
+                            <h3>Best Young Researcher Award - Bioinformatics Conference 2025</h3>
+                            <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Received the Best Young Researcher Award at the International Conference on Bioinformatics and Computational Biology 2025 for outstanding contributions to AI-powered drug discovery and genomic data analysis.</p>
+                            <div class="news-meta">
+                                <span class="news-category">Award</span>
+                                <span class="news-tags">#Award #Conference #Bioinformatics</span>
+                            </div>
+                            <div class="news-links">
+                                <a href="#" class="news-link"><i class="fas fa-trophy"></i> Award Details</a>
+                                <a href="#" class="news-link"><i class="fas fa-images"></i> Photos</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- خبر 3 -->
+                    <article class="news-card">
+                        <div class="news-date">Jul 10, 2025</div>
+                        <div class="news-content">
+                            <h3>Speaking at ISMB/ECCB 2025 - Boston</h3>
+                            <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Invited to present our work on "Deep Learning for Molecular Dynamics Simulations" at the 36th International Conference on Intelligent Systems for Molecular Biology and the 33rd European Conference on Computational Biology.</p>
+                            <div class="news-meta">
+                                <span class="news-category">Conference</span>
+                                <span class="news-tags">#ISMB #ECCB #Conference</span>
+                            </div>
+                            <div class="news-links">
+                                <a href="#" class="news-link"><i class="fas fa-microphone"></i> Abstract</a>
+                                <a href="#" class="news-link"><i class="fas fa-calendar"></i> Schedule</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- خبر 4 -->
+                    <article class="news-card">
+                        <div class="news-date">Jun 22, 2025</div>
+                        <div class="news-content">
+                            <h3>New Grant Awarded - NIH R01</h3>
+                            <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Awarded $1.2M NIH R01 grant for "Computational Approaches to Antibiotic Resistance Prediction and Drug Design" over the next 5 years. This funding will support development of our AI drug discovery platform.</p>
+                            <div class="news-meta">
+                                <span class="news-category">Funding</span>
+                                <span class="news-tags">#Grant #NIH #Funding</span>
+                            </div>
+                            <div class="news-links">
+                                <a href="#" class="news-link"><i class="fas fa-dollar-sign"></i> Grant Details</a>
+                                <a href="#" class="news-link"><i class="fas fa-users"></i> Team</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- خبر 5 -->
+                    <article class="news-card">
+                        <div class="news-date">May 5, 2025</div>
+                        <div class="news-content">
+                            <h3>Software Release: BioPyTorch v2.0</h3>
+                            <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Released BioPyTorch v2.0, our open-source deep learning framework for bioinformatics. New features include GPU-accelerated protein folding prediction and transfer learning for genomic data.</p>
+                            <div class="news-meta">
+                                <span class="news-category">Software</span>
+                                <span class="news-tags">#OpenSource #Software #PyTorch</span>
+                            </div>
+                            <div class="news-links">
+                                <a href="#" class="news-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="news-link"><i class="fas fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="mailto:milad9dxb@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/+97152152704319"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/Christmas260895"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <p class="copyright">© 2025 Milad Bagheri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
