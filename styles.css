@@ -280,8 +280,8 @@ nav a.active, .nav-item > a.active {
   color: var(--text-secondary);
 }
 
-/* Skills/Projects/News Sections */
-.skills, .projects-grid, .news-grid {
+/* Skills/Projects Sections */
+.skills, .projects-grid {
   padding: 80px 0;
 }
 
@@ -432,89 +432,8 @@ nav a.active, .nav-item > a.active {
   color: var(--highlight);
 }
 
-/* News Grid */
-.news-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px;
-}
-
-.news-card {
-  background: var(--secondary);
-  border-radius: 10px;
-  overflow: hidden;
-  border-left: 4px solid var(--highlight);
-  transition: transform 0.3s ease;
-}
-
-.news-card:hover {
-  transform: translateX(5px);
-}
-
-.news-date {
-  background: var(--highlight);
-  color: var(--text);
-  padding: 10px 20px;
-  font-size: 0.9em;
-  font-weight: 500;
-}
-
-.news-content {
-  padding: 25px;
-}
-
-.news-content h3 {
-  font-size: 1.2em;
-  margin-bottom: 15px;
-  color: var(--text);
-}
-
-.news-excerpt {
-  color: var(--text-secondary);
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-.news-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 15px 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  font-size: 0.85em;
-}
-
-.news-category {
-  background: rgba(124, 58, 237, 0.2);
-  color: var(--purple);
-  padding: 4px 12px;
-  border-radius: 15px;
-  font-weight: 500;
-}
-
-.news-tags {
-  color: var(--text-secondary);
-}
-
-.news-links {
-  display: flex;
-  gap: 15px;
-}
-
-.news-link {
-  color: var(--text-secondary);
-  text-decoration: none;
-  font-size: 0.9em;
-  transition: color 0.3s ease;
-}
-
-.news-link:hover {
-  color: var(--highlight);
-}
-
 /* Hero sections for subpages */
-.students-hero, .projects-hero, .news-hero {
+.projects-hero {
   padding: 100px 0;
   text-align: center;
   background: linear-gradient(135deg, var(--secondary), var(--accent));
@@ -590,7 +509,7 @@ footer {
     display: none;
   }
 
-  .projects-list, .news-list {
+  .projects-list {
     grid-template-columns: 1fr;
   }
 
