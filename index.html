@@ -66,38 +66,49 @@ header {
 nav {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
-nav a {
+.nav-item {
+  position: relative;
+}
+
+nav a, .nav-item > a {
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 6px;
   transition: all 0.3s ease;
+  display: block;
 }
 
-nav a:hover {
+nav a:hover, .nav-item > a:hover {
   background-color: var(--accent);
   transform: translateY(-2px);
 }
 
-/* Services dropdown */
-.services-dropdown { 
-  position: relative; 
-}
-
+/* Dropdown fix - حالا در جای درست */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: var(--accent);
   min-width: 220px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000;
   border-radius: 6px;
   overflow: hidden;
   top: 100%;
   left: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown-content.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .dropdown-content a {
@@ -106,14 +117,15 @@ nav a:hover {
   text-decoration: none;
   display: block;
   transition: background-color 0.3s;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
 }
 
 .dropdown-content a:hover { 
   background-color: var(--highlight); 
-}
-
-.services-dropdown:hover .dropdown-content { 
-  display: block; 
 }
 
 /* Hero Section */
@@ -217,11 +229,6 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-/* حذف تصویر پس‌زمینه */
-.antibody-bg {
-  display: none;
 }
 
 /* Senior Title Section */
@@ -379,14 +386,37 @@ footer {
 </style>
 </head>
 <body>
+<!-- JavaScript برای dropdown -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Services dropdown
+  const servicesDropdown = document.querySelector('.services-dropdown');
+  const servicesContent = document.querySelector('.services-dropdown .dropdown-content');
+  
+  servicesDropdown.addEventListener('mouseenter', function() {
+    servicesContent.classList.add('show');
+  });
+  
+  servicesDropdown.addEventListener('mouseleave', function() {
+    servicesContent.classList.remove('show');
+  });
+});
+</script>
+
 <header>
   <div class="container">
     <div class="header-content">
       <div class="logo">Milad <span>Bagheri</span></div>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <div class="services-dropdown">
+        <div class="nav-item">
+          <a href="#home">Home</a>
+        </div>
+        
+        <div class="nav-item">
+          <a href="#about">About</a>
+        </div>
+        
+        <div class="nav-item services-dropdown">
           <a href="#services">Services</a>
           <div class="dropdown-content">
             <a href="#peptide-design">Peptide Design</a>
@@ -396,7 +426,23 @@ footer {
             <a href="#computational-genomics">Computational Genomics</a>
           </div>
         </div>
-        <a href="#contact">Contact</a>
+        
+        <!-- منوهای جدید -->
+        <div class="nav-item">
+          <a href="#students">Students</a>
+        </div>
+        
+        <div class="nav-item">
+          <a href="#active-projects">Active Projects</a>
+        </div>
+        
+        <div class="nav-item">
+          <a href="#news">News</a>
+        </div>
+        
+        <div class="nav-item">
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
     </div>
   </div>
@@ -425,8 +471,28 @@ footer {
           </div>
         </div>
         <div class="hero-image">
-          <!-- این بخش اکنون خالی است و تصویری نمایش داده نمی شود -->
+          <!-- بعداً molecule viewer می‌ذاریم -->
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- بخش Students -->
+  <section id="students" class="skills">
+    <div class="container">
+      <h2 class="section-title">My <span>Students</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-user-graduate"></i>
+          <h3>PhD Candidate</h3>
+          <p>AI in Protein Structure Prediction</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-user-graduate"></i>
+          <h3>MSc Student</h3>
+          <p>Bioinformatics Pipeline Development</p>
+        </div>
+        <!-- بیشتر اضافه کن -->
       </div>
     </div>
   </section>
@@ -435,6 +501,45 @@ footer {
     <div class="container">
       <h2>Senior Computational Biologist</h2>
       <p>Specializing in the intersection of biology, computation, and artificial intelligence to drive innovation in drug discovery and genomic research.</p>
+    </div>
+  </section>
+
+  <!-- بخش Active Projects -->
+  <section id="active-projects" class="skills">
+    <div class="container">
+      <h2 class="section-title">Active <span>Projects</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-flask"></i>
+          <h3>AI Drug Discovery</h3>
+          <p>Machine learning for novel therapeutic targets</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-dna"></i>
+          <h3>Genomic Analysis</h3>
+          <p>Next-generation sequencing data analysis</p>
+        </div>
+        <!-- بیشتر اضافه کن -->
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="news">
+    <div class="container">
+      <h2 class="section-title">Latest <span>News</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-newspaper"></i>
+          <h3>Paper Published</h3>
+          <p>New algorithm for protein folding prediction</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-award"></i>
+          <h3>Award Won</h3>
+          <p>Best Young Researcher in Bioinformatics</p>
+        </div>
+        <!-- بیشتر اضافه کن -->
+      </div>
     </div>
   </section>
 
