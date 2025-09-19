@@ -58,20 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe cards for animation
-    document.querySelectorAll('.skill-card, .project-card, .news-card').forEach(card => {
+    document.querySelectorAll('.skill-card, .project-card').forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(20px)';
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
-
-    // Mobile menu toggle (if needed)
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const nav = document.querySelector('nav');
-    
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function() {
-            nav.classList.toggle('active');
-        });
-    }
 });
