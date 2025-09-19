@@ -144,6 +144,9 @@ nav a.active, .nav-item > a.active {
   display: flex;
   gap: 60px;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hero-text {
@@ -237,24 +240,9 @@ nav a.active, .nav-item > a.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-
-.placeholder {
-  text-align: center;
-  color: var(--text-secondary);
-  font-size: 1.2em;
-  padding: 40px;
-  background: rgba(255,255,255,0.05);
+  min-height: 400px;
+  background: linear-gradient(135deg, var(--accent), var(--purple));
   border-radius: 10px;
-  border: 2px dashed var(--text-secondary);
-}
-
-.placeholder small {
-  display: block;
-  font-size: 0.8em;
-  margin-top: 10px;
-  opacity: 0.7;
 }
 
 /* Senior Title Section */
@@ -341,6 +329,12 @@ nav a.active, .nav-item > a.active {
 }
 
 /* Projects Grid */
+.projects-hero {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
+}
+
 .projects-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -432,13 +426,6 @@ nav a.active, .nav-item > a.active {
   color: var(--highlight);
 }
 
-/* Hero sections for subpages */
-.projects-hero {
-  padding: 100px 0;
-  text-align: center;
-  background: linear-gradient(135deg, var(--secondary), var(--accent));
-}
-
 /* Footer */
 footer {
   background-color: var(--secondary);
@@ -506,7 +493,8 @@ footer {
   }
   
   .hero-image {
-    display: none;
+    order: -1;
+    min-height: 300px;
   }
 
   .projects-list {
